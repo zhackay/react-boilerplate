@@ -1,10 +1,10 @@
 {
-  "name": "unit_01_es6_warmup",
-  "version": "1.0.0",
+  "name": "react-c9-boilerplate",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -d --watch --host $IP --port $PORT --history-api-fallback --public react-boilerplate-c9-jameshughkim.c9users.io",
+    "start": "webpack-dev-server -d --watch --host $IP --port $PORT --history-api-fallback --public $C9_HOSTNAME",
     "webpack": "node_modules/.bin/webpack",
     "webpack:watch": "npm run webpack -- --watch",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
