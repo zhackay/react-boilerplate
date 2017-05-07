@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server -d --watch --host $IP --port $PORT --history-api-fallback --public react-boilerplate-c9-jameshughkim.c9users.io",
     "webpack": "node_modules/.bin/webpack",
     "webpack:watch": "npm run webpack -- --watch",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
