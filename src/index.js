@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
 
-import { App } from './components/app';
+import { App } from './components/app.js';
 
 // Add CSS files to bundle
-require('../src/css/application.scss');
+require('./css/application.css');
 
-
-// Render application to DOM
-ReactDOM.render(
-    <App />,
-    document.getElementById('app')
-);
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));

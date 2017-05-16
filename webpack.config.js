@@ -15,12 +15,12 @@ module.exports = {
     "module": {
         "loaders": [
             {
-                "test": /.js?$/,
+                "test": /\.(js|jsx)$/,
                 "loader": 'react-hot!babel-loader',
                 "exclude": /node_modules/
             },
             {
-                "test": /\.scss$/,
+                "test": /\.(scss|css)$/,
                 "loaders": ["style", "css?sourceMap", "sass?sourceMap"]
             } 
         ]

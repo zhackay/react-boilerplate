@@ -1,12 +1,16 @@
 import React from 'react';
 
+import {Header} from "../components/Header/index.js";
+import {Footer} from "../components/Footer/index.js";
+import {Nav} from "../components/Nav/index.js";
 
-export class App extends React.Component {
-    render() {
-        return (
-            <div className="app">
-                <h1>My Application</h1>
-            </div>
-        );
-    }
-};
+const App = () => (
+  <div>
+    <h1>HAHA</h1>
+    <Header />
+    <Nav />
+    <Footer />
+  </div>
+)
+
+export {App};
